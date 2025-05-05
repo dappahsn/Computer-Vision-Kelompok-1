@@ -130,7 +130,7 @@ if uploaded_file:
 
     # Informasi penggunaan
     st.markdown("---")
-    st.markdown("### ℹ️ Cara Menggunakan Aplikasi:")
+    st.markdown("### ℹ️ Cara Menggunakan Aplikasi: ")
     st.markdown(""" 
     1. Upload gambar pada panel **sidebar**.
     2. Atur nilai **threshold manual** dengan slider.
