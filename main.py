@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Adaptive Sobel Edge Detection", layout="wide")
+st.set_page_config(page_title="Adaptive Sobel Edge Detection", layout="wide", page_icon="🧠")
 
 # Judul Aplikasi
 st.title("Edge Detecting Using Adaptive Sobel")
