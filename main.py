@@ -2,10 +2,10 @@ import streamlit as st
 import cv2
 import numpy as np
 from PIL import Image
-from streamlit_option_menu import
+from streamlit_option_menu import option_menu
 
 # Judul aplikasi
-st.title('Edge Detecting Using Adaptive')
+st.title('Edge Detecting Using Adaptive Sobel')
 
 # Upload gambar
 uploaded_file = st.file_uploader("Upload gambar", type=["jpg", "jpeg", "png"])
