@@ -75,13 +75,15 @@ if uploaded_file:
 
     # Informasi penggunaan
     st.markdown("---")
-    st.markdown("### ℹ️ Computer Vision - Kelompok 1:")
+    st.image("logo-usk.png", width=120)  # Sesuaikan nama file dan ukuran logo
+
+    st.markdown("### Computer Vision - Kelompok 1:")
     st.markdown("""
-    1. Muhammad Daffa Husen
-    2. Miftah Rizki Pohan
-    3. Ryan Akmal Pasya
-    4. Muhammad Iffat Najwan
+    1. Muhammad Daffa Husen  
+    2. Miftah Rizki Pohan  
+    3. Ryan Akmal Pasya  
+    4. Muhammad Iffat Najwan  
     5. Hanum Aulia Ramadhani
-    """)
+""")
 else:
     st.info("📂 Silakan upload gambar pada panel sidebar untuk memulai deteksi tepi.")
