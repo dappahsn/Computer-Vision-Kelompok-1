@@ -40,6 +40,10 @@ with col_left:
 
 with col_right:
     st.image("sobel.png", use_container_width=True)
+st.markdown("<br>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown("<br>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 
 # Sidebar: Upload dan Pengaturan
 st.sidebar.header("📥 Input & Pengaturan")
