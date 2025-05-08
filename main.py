@@ -97,11 +97,11 @@ if uploaded_file:
             st.info("Klik tombol *Terapkan Threshold Manual* di sidebar untuk melihat hasil.")
 
     with col2:
-        st.subheader("Hasil Sobel Standar")
-        st.image(sobel_uint8, clamp=True, caption="Sobel Magnitude", use_container_width=True)
+        st.subheader("Hasil Sobel Standart")
+        st.image(sobel_uint8, clamp=True, caption="Sobel Standart", use_container_width=True)
 
-        st.subheader("Threshold Otsu (Adaptif)")
-        st.image(otsu_thresh, clamp=True, caption="Otsu Adaptive Threshold", use_container_width=True)
+        st.subheader("Hasil Adaptive Sobel (Otsu)")
+        st.image(otsu_thresh, clamp=True, caption="Adaptive Sobel (Otsu)", use_container_width=True)
 
     # Informasi tambahan
     st.markdown("---")
