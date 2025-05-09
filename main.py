@@ -17,7 +17,7 @@ st.set_page_config(
 )
 
 # Terapkan background image dari file lokal
-bg_image = get_base64_of_bin_file("img/bg.jpg")
+bg_image = get_base64_of_bin_file("img/bg.png")
 page_bg_img = f"""
 <style>
 .stApp {{
