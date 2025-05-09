@@ -12,9 +12,11 @@ st.markdown(
     <style>
     * {
         font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
     }
     .stApp {
-        background-image: url("https://img.freepik.com/free-photo/white-paper-texture_1194-2301.jpg?t=st=1746725280~exp=1746728880~hmac=cf3277982c2e24ddedef8eb1212cb3c9b59a1694a16d19f50cf254aaf7b4662c&w=996");
+        background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?t=st=1746772126~exp=1746775726~hmac=d30e904b9018aad1a69b1c48eaf7cc1b88551812344e30578a0c6b197e86ad3a&w=1060");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -39,7 +41,7 @@ with col_left:
     """, unsafe_allow_html=True)
 
 with col_right:
-    st.image("sobel.png", use_container_width=True)
+    st.image("img/sobel.png", use_container_width=True)
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
@@ -105,7 +107,7 @@ if uploaded_file:
 
     # Informasi tambahan
     st.markdown("---")
-    st.image("logo-usk.png", width=120)
+    st.image("img/logo-usk-hitam.png", width=120)
 
     st.markdown("### Computer Vision - Kelompok 1:")
     st.markdown("""
@@ -119,7 +121,7 @@ else:
     st.info("📂 Silakan upload gambar pada panel sidebar untuk memulai deteksi tepi.")
         # Informasi tambahan
     st.markdown("---")
-    st.image("logo-usk.png", width=120)
+    st.image("img/logo-usk-hitam.png", width=120)
 
     st.markdown("### Computer Vision - Kelompok 1:")
     st.markdown("""
