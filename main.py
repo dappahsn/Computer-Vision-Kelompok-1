@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Adaptive Sobel Edge Detection", layout="wide", page_icon="🧠")
+st.set_page_config(page_title="Adaptive Sobel Edge Detection", layout="wide", page_icon="img/logo-usk.png")
 
 # Styling: background, font, dan sidebar
 st.markdown(
@@ -118,6 +118,7 @@ if uploaded_file:
     5. Hanum Aulia Ramadhani
     """)
 else:
+    
     st.info("📂 Silakan upload gambar pada panel sidebar untuk memulai deteksi tepi.")
         # Informasi tambahan
     st.markdown("---")
