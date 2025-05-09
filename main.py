@@ -1,11 +1,36 @@
 import streamlit as st
 import cv2
 import numpy as np
+import base64
 
-# Konfigurasi halaman
-st.set_page_config(page_title="Adaptive Sobel Edge Detection", layout="wide", page_icon="img/logo-usk.png")
+# Fungsi untuk mengubah gambar lokal menjadi base64 (untuk background)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
-# Styling: background, font, dan sidebar
+# Konfigurasi halaman (menggunakan ikon lokal)
+st.set_page_config(
+    page_title="Adaptive Sobel Edge Detection",
+    layout="wide",
+    page_icon="img/logo-usk.png"  # Ikon lokal
+)
+
+# Terapkan background image dari file lokal
+bg_image = get_base64_of_bin_file("img/bg.jpg")
+page_bg_img = f"""
+<style>
+.stApp {{
+    background-image: url("data:image/jpg;base64,{bg_image}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}}
+</style>
+"""
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Styling font
 st.markdown(
     """
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -14,12 +39,6 @@ st.markdown(
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 16px;
-    }
-    .stApp {
-        background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?t=st=1746772126~exp=1746775726~hmac=d30e904b9018aad1a69b1c48eaf7cc1b88551812344e30578a0c6b197e86ad3a&w=1060");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
     </style>
     """,
@@ -42,6 +61,7 @@ with col_left:
 
 with col_right:
     st.image("img/sobel.png", use_container_width=True)
+
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("<br>", unsafe_allow_html=True)
@@ -118,9 +138,9 @@ if uploaded_file:
     5. Hanum Aulia Ramadhani
     """)
 else:
-    
     st.info("📂 Silakan upload gambar pada panel sidebar untuk memulai deteksi tepi.")
-        # Informasi tambahan
+
+    # Informasi tambahan
     st.markdown("---")
     st.image("img/logo-usk-hitam.png", width=120)
 
