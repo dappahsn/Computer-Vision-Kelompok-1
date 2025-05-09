@@ -11,7 +11,7 @@ def get_base64_of_bin_file(bin_file):
 
 # Konfigurasi halaman (menggunakan ikon lokal)
 st.set_page_config(
-    page_title="Adaptive Sobel Edge Detection",
+    page_title="Group 1 | Computer Visions",
     layout="wide",
     page_icon="img/logo-usk.png"  # Ikon lokal
 )
@@ -46,7 +46,7 @@ st.markdown(
 )
 
 # Judul Aplikasi
-st.title("Edge Detecting Using Adaptive Sobel")
+st.title("Adaptive Sobel Edge Detection")
 st.markdown("<br>", unsafe_allow_html=True)
 
 # Header Penjelasan dan Gambar
@@ -129,7 +129,7 @@ if uploaded_file:
     st.markdown("---")
     st.image("img/logo-usk-hitam.png", width=120)
 
-    st.markdown("### Computer Vision - Kelompok 1:")
+    st.markdown("### Group 1 | Computer Visions:")
     st.markdown("""
     1. Muhammad Daffa Husen  
     2. Miftah Rizki Pohan  
@@ -138,13 +138,13 @@ if uploaded_file:
     5. Hanum Aulia Ramadhani
     """)
 else:
-    st.info("📂 Silakan upload gambar pada panel sidebar untuk memulai deteksi tepi.")
+    st.info("📂 Silakan upload gambar pada sidebar untuk memulai deteksi tepi.")
 
     # Informasi tambahan
     st.markdown("---")
     st.image("img/logo-usk-hitam.png", width=120)
 
-    st.markdown("### Computer Vision - Kelompok 1:")
+    st.markdown("### Group 1 | Computer Visions:")
     st.markdown("""
     1. Muhammad Daffa Husen  
     2. Miftah Rizki Pohan  
